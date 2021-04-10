@@ -9,16 +9,16 @@ import { SpacexapiService } from "../network/spacexapi.service";
 })
 
 export class MissionDetailsComponent implements OnInit{
-    mis: IMission[]
-    @Input() spacemissionx: IMission
+    missions: IMission[]
+    @Input() missionx: IMission
     constructor(private spaceApi:SpacexapiService) {}
 
     ngOnInit():void {
         this.getMissions();
-        console.log(this.mis)
+        console.log(this.missions)
     }
     getMissions():void{
-        this.spaceApi.getMissions().subscribe(mis => this.mis = mis)
+        this.spaceApi.getMissions().subscribe(missions => this.missions = missions)
     }
     
 }

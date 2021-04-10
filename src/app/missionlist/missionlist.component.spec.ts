@@ -11,4 +11,9 @@ describe('MissionListComponent', () => {
         })
         .compileComponents();
     })
+    beforeEach(() => {
+        fix = TestBed.createComponent(MissionListComponent);
+        comp = fix.componentInstance;
+        fix.detectChanges();
+    });
 })

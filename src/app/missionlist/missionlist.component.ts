@@ -26,7 +26,7 @@ export class MissionListComponent implements OnInit {
         this.spaceApi.getMissions()
         .subscribe(missions => {
             this.missions = missions
-            this.yearsList = [...new Set(missions.map(mish=>(mish.launch_year)))]
+            this.yearsList = [...new Set(missions.map(missionX => (missionX.launch_year)))]
             console.log(this.yearsList)
         })
     }

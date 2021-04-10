@@ -1,19 +1,25 @@
+<h2>Elon Musk SpaceX Mission Launch List</h2>
 <div>
     <div>
-        <div>
-            <h1>SpaceX Mission Details</h1>
-        </div>
-        <div>
-            <h3>Mission Name</h3>
-        </div>
-        <div>
-            <h3>Launch Year</h3>
-        </div>
-        <div>
-            <h3>Details</h3>
-        </div>
-        <div>
-            <h3>Mission Patch Small</h3>
-        </div>
+        <h3>{{missionX.mission_name}}</h3>
     </div>
+    <div>
+        <h4>Rocket: {{missionX.rocket.rocket_name}}</h4>
+    </div>
+    <div>
+        <h4>Type: {{missionX.rocket.rocket_type}}</h4>
+    </div>
+    <div>
+        <h4>Year: {{missionX.launch_year}}</h4>
+    </div>
+    <div>
+        <h4>Launch Site: {{missionX.launch_site.site_name_long}}</h4>
+    </div>
+    <div>
+        <h4>Status: {{missionX.launch_success}}</h4>
+    </div>
+    <div>
+        <p>Details: {{missionX.details}}</p>
+    </div>
+
 </div>
